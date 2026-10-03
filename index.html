@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131c">
+  <meta name="description" content="A social number-deduction game where the clues are only the counts.">
+  <title>Dead &amp; Injured — number deduction</title>
+  <link rel="icon" href="./brand-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./script.js"></script>
+</head>
+<body>
+  <div class="ambient ambient--one" aria-hidden="true"></div>
+  <div class="ambient ambient--two" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Dead and Injured home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="brand-type"><strong>DEAD</strong><span>&amp;</span><strong>INJURED</strong></span>
+    </a>
+    <div class="topbar-status" id="connection-status" aria-live="polite">
+      <span class="status-dot" aria-hidden="true"></span><span id="connection-label">Preview mode</span>
+    </div>
+  </header>
+  <main id="app" class="app-shell" tabindex="-1">
+    <div class="loading-state" role="status"><span class="spinner" aria-hidden="true"></span>Preparing the game table…</div>
+  </main>
+  <div id="toast-root" class="toast-root" aria-live="polite" aria-atomic="true"></div>
+  <footer class="site-footer">
+    <span>THE NUMBERS ARE HIDDEN. THE COUNTS ARE NOT.</span>
+    <span>DEAD &amp; INJURED <b>·</b> A SOCIAL DEDUCTION GAME</span>
+  </footer>
+</body>
+</html>
